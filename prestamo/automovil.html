@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamo Automovil</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    
+    <div class="form">
+        <fieldset>
+            <h1>PRESTAMO AUTOMOVIL</h1>
+            <form>
+                <div>
+                    <label for="capital">PRESTAMO 
+                        <input type="text" placeholder="Ingrese monto prestamo" id="capitalAutomovil">
+                        <i class="fas fa-coins"></i>
+                    </label>
+                </div>
+                <div>
+                    <label for="couta">CUOTAS 
+                        <input type="text" placeholder="Ingrese las cuotas del prestamo" id="coutaAutomovil">
+                        <i class="far fa-calendar-alt"></i>
+                    </label>
+                </div>
+            </form>
+        <button onclick="gen_table2();">CALCULAR</button>
+        </fieldset>
+        <hr>
+        <table class="tab">
+            <thead>
+                <tr>
+                    <td>NRO</td>
+                    <td>CAPITAL</td>
+                    <td>INTERES</td>
+                    <td>IMPORTE A PAGAR</td>
+                </tr>
+            </thead>
+            <tbody id="tabAutomovil">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+     
+
+
+
+
+    
+
+
+    <script src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
